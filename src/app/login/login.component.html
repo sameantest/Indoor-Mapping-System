@@ -1,0 +1,26 @@
+
+<div class="conatiner">
+    <div class="card-header">
+       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    </div>
+    <div class="card-body">
+       <form>
+       
+           <div class="form-floating">
+             <input type="email" class="form-control" id="user_name" name="user_name"  [(ngModel)]="register.UserName" placeholder="someone@email.com">
+             <label for="user_name">User Name</label>
+           </div>
+           <div class="form-floating">
+             <input type="password" class="form-control" id="floatingPassword" name="password" [(ngModel)]="register.Password" placeholder="************">
+             <label for="floatingPassword">Password</label>
+           </div>
+       
+           <div class="checkbox mb-3">
+             <label>
+               <input type="checkbox" value="remember-me"> Remember me
+             </label>
+           </div>
+           <button class="w-100 btn btn-lg btn-danger" type="submit" (click)="login()">Sign in</button>
+         </form>
+    </div>
+</div>

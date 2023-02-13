@@ -1,0 +1,45 @@
+
+<div class="container">
+    <div class="card-header">
+        <h3>Sign up</h3>
+    </div>
+    <div class="card-body">
+        <div class="p-5 mb-4 rounded-3">
+            <div class="container-fluid py-5">
+              <form class="form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="register.F_Name" placeholder="First Name">
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="gende" name="gender" [(ngModel)]="register.L_Name" placeholder="Last Name">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="register.Email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="mobile_number" class="form-label">Mobile Number</label>
+                    <input type="number" class="form-control" id="number" name="number" [(ngModel)]="register.phone_number" placeholder="0123456789">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">User Name</label>
+                    <input type="email" class="form-control" id="username" name="username" [(ngModel)]="register.UserName" placeholder="Please use your email as your username">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" [(ngModel)]="register.Password" placeholder="******************">
+                </div>
+                <div class="mb-3">
+                    <label for="confirm_password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" [(ngModel)]="register.c_password" placeholder="******************">
+                </div>
+              </form>
+              <button type="submit" class="btn btn-warning" (click)="Registration()">Submit</button> &nbsp;
+              <button routerLink="/login" class="btn btn-danger">Back</button>
+            </div>
+          </div>
+        
+    </div>
+</div>
