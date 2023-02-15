@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="container">
     <div class="card-header">
         <h3>Sign up</h3>
@@ -38,4 +38,68 @@
           </div>
         
     </div>
-</div>
+</div> -->
+
+
+
+
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+          <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+            <div class="card-img-left d-none d-md-flex">
+              <!-- Background image for card set in CSS! -->
+            </div>
+            <div class="card-body p-4 p-sm-5">
+              <h5 class="card-title text-center mb-5 fw-light fs-5">Admin Registration</h5>
+              <form class="form">
+  
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="admin.F_Name" placeholder="First Name" required autofocus>
+                    <label for="floatingInputUsername">Firstname</label>
+                  </div>
+    
+                  <div class="form-floating mb-3">
+                    <input  type="text" class="form-control" id="gende" name="gender" [(ngModel)]="admin.L_Name" placeholder="Last Name" required autofocus>
+                    <label for="floatingInputUsername">Lastname</label>
+                  </div>
+    
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="email" name="email" [(ngModel)]="admin.Email" placeholder="name@example.com" required autofocus>
+                  <label for="floatingInputUsername">Email address</label>
+                </div>
+  
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="number" name="number" [(ngModel)]="admin.Phone_Number" placeholder="0123456789">
+                  <label for="floatingInputEmail">Mobile Number</label>
+                </div>
+  
+                <hr>
+  
+                <div class="form-floating mb-3">
+                  <input  type="password" class="form-control" id="password" name="password" [(ngModel)]="admin.Password" placeholder="******************">
+                  <label for="floatingPassword">Password</label>
+                </div>
+  
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="confirm_password" name="confirm_password" [(ngModel)]="admin.c_password" placeholder="******************">
+                  <label for="floatingPasswordConfirm">Confirm Password</label>
+                </div>
+  
+                <div class="d-grid mb-2">
+                  <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" (click)="AdminRegistration()" type="submit">Register</button>
+                </div>
+  
+                <a class="d-block text-center mt-2 small" href="/admin-login">Have an account? Sign In</a>
+  
+                <hr class="my-4">
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
