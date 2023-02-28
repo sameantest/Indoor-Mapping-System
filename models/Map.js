@@ -2,17 +2,29 @@ var mongoose = require('mongoose');
 
 
 var MapSchema = new mongoose.Schema({
-    floor: String,
+    floorNumber: {
+        type: Number,
+        unique: true
+    },
+    floor_image: String,
+   floors: [{
     coordinates: [{
-        image: String,
         latitute: Number,
-        langitutte: Number,
+        langitute: Number,
         name: String,
         edge: [{
             to: String,
             distance: Number
         }]
     }],
+    shops: [{
+        name: String,
+        shop_image: String,
+        distance: Number,
+        from: String,
+        to: String
+    }]
+   }],
     createdAt: {
         type: Date,
         defualt: Date.now()
